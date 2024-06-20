@@ -4,22 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soundboard</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="title-container">
-        <h1 id="title">Soundboard</h1>
-    </div>
+    <h1 id="title">Soundboard</h1>
+    <h2 id="second-title">blue-jay3</h2>
     <div id="button-container">
-        <div>
-            <button class="button" id="quack">🦆</button>
-            <button class="button" id="honk">🚗</button>
-            <button class="button" id="surprise">🎉</button>
+        <div class="botton-row">
+            <button class="button" id="quack" onclick="play('quack_audio')">🦆</button>
+            <audio src="./sounds/quack.mp3#t=0.25" id="quack_audio"></audio>
+            <button class="button" id="honk" onclick="play('honk_audio')">🚗</button>
+            <audio src="./sounds/honk.mp3" id="honk_audio"></audio>
+            <button class="button" id="surprise" onclick="play('surprise_audio')">🎉</button>
+            <audio src="./sounds/surprise.wav" id="surprise_audio"></audio>
         </div>
-        <div>
-            <button class="button" id="trumpet">🎺</button>
-            <button class="button" id="electronic">👾</button>
-            <button class="button" id="explosion">💥</button>
+        <div class="botton-row">
+            <button class="button" id="trumpet" onclick="play('trumpet_audio')">🎺</button>
+            <audio src="./sounds/trumpet.wav" id="trumpet_audio"></audio>
+            <button class="button" id="electronic" onclick="play('electronic_audio')">👾</button>
+            <audio src="./sounds/electronic.mp3" id="electronic_audio"></audio>
+            <button class="button" id="explosion" onclick="play('explosion_audio')">💥</button>
+            <audio src="./sounds/explosion.mp3" id="explosion_audio"></audio>
         </div>
     </div>
     <script src="script.js"></script>
